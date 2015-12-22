@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>FORM VALIDATION</title>
+        	
+        <style type="text/css">
+
+
+            *,
+            *:before,
+            *:after 
+            {
+               box-sizing: border-box;
+            }
+            
+            form 
+            {
+             
+              font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+              
+            }
+
+            input
+            {
+              border-radius: 5px;
+              font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+              margin: 0;
+            }
+
+
+            #container
+            {
+                position: fixed;
+                width: 300px;
+                height: auto;
+                top: 45%;
+                left:52%;
+                padding: 25px;
+                margin-top: -200px;
+                margin-left: -170px;
+            	background: #fff;
+                border-radius: 3px;
+                border: 2px solid #ccc;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+                background: #f0f0f2;
+            }
+            .btn
+            {
+
+                  border: 0;
+                  color: #fff;
+                  font-weight: bold;
+                  margin-left: 90px;
+                  padding: 8px 16px;
+                  background: linear-gradient(#49708f, #293f50);
+                  border-radius: 5px;
+            }
+
+            p
+            {
+                font-family: "times new roman";
+                font-size: 2opx;
+                color: red;
+                border-radius: 5px;
+                border: double;
+                border-color: yellow;
+                width: 400px;
+            }
+
+
+
+                        
+        </style>
+        	
+        	<h1><center><u>APPLICATION FORM</u></center></h1>
+    </head>
+
+    <body bgcolor="#73AD21">
+        <form  action="form.php" method="POST" name="form1"> 
+            <div id="container">
+            	<h4><label for="n1">FIRST NAME:<br></h4>
+                <input type="text" name="name" id="n1" value="" required></label>
+                <br>
+               		    
+               	<h4><label for="n2">MIDDLE NAME:<br></h4>
+                <input type="text" name="mname" id="n2 "value="" required></label>
+                <br>
+                        
+                <h4><label for="n3">LAST NAME:</label><br></h4>
+                <input type="text" name="lname" id="n3" value="" required>
+                <br>
+                        
+                <h4><label for="e1">EMAIL:</label><br></h4>
+                <input type="email" name="email" id="e1" placeholder="----@gmail.com" required>
+                <br>
+                	    
+                <h4><label for="a1">AGE:</label><br></h4>
+                <input type="number" name="age" id="a1" min="18" max="99" required>
+                <br>
+                <br>
+            
+                <button onclick="myFunction()" class="btn">SUBMIT</button>
+                <script>
+                    function myFunction() 
+                    {
+                     alert("Hello! I am an alert box!");
+                    }
+                </script>
+            </div>
+
+        </form>
+
+        <p>This is my first form validation using html</br>
+           While you should always validate data on your</br>
+           servers,there are many benefits to additional</br>
+           validation of data on the Web page itself.</br>
+           In many ways, users are annoyed by forms.</br>
+           By validating form data while the user is filling </br>
+           it out,the user can know immediately if they've made any mistakes; </br>
+           this saves the user the time of waiting on an HTTP response,</br>
+           and saves your server from dealing with bad form input.</br>
+           This article covers how to go about validating form data</br>
+            within your form's Web content.</p>
+
+
+
+
+        
+
+    </body>
+</html> 
